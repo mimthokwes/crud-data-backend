@@ -1,0 +1,26 @@
+GET http://localhost:3001/users
+
+###
+GET http://localhost:3001/users/5
+
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name" : "tester",
+    "email" : "tester@gmail.com",
+    "gender" : "female"
+}
+###
+PATCH http://localhost:3001/users/24
+Content-Type: application/json
+
+{
+    "name" : "bruh",
+    "email" : "ganten@gmail.com",
+    "gender" : "💀"
+}
+
+###
+DELETE http://localhost:3001/users/18
